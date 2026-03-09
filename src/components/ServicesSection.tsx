@@ -21,7 +21,7 @@ const allServices = [
   },
   {
     icon: ShieldCheck,
-    title: "Team Enablement",
+    title: "Upskill Your Team",
     badge: null,
     description: "Upskill your engineering team on GenAI best practices — from prompt engineering to evaluation frameworks and responsible AI patterns.",
   },
