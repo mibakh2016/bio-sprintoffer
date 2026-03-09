@@ -14,7 +14,7 @@ const HeroSection = () => {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-glow/20 bg-glow/5 px-4 py-1.5 text-sm text-glow mb-8 animate-fade-in">
             <Shield className="h-4 w-4" />
-            <span className="font-display">De-Risk Your GenAI Investment</span>
+            <span className="font-display">De-Risk Your GenAI Development</span>
           </div>
           
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-primary-foreground mb-6 animate-fade-in-up">
