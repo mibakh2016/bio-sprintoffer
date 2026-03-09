@@ -17,11 +17,6 @@ const sprints = [
 
 const services = [
   {
-    icon: Search,
-    title: "Architecture Audit",
-    description: "Deep-dive into your GenAI stack — LLM orchestration, RAG pipelines, prompt management, and infrastructure. Identify risks before they become costly.",
-  },
-  {
     icon: Zap,
     title: "Production Readiness",
     description: "Get your GenAI app from demo to production. Observability, guardrails, cost optimization, and scalability patterns baked into your architecture.",
