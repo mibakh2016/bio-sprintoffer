@@ -22,7 +22,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-lg sm:text-xl text-primary-foreground/70 max-w-2xl mb-10 font-body leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-            I'm a software architect who helps teams validate architecture, reduce risk, and accelerate delivery of generative AI applications — through focused, time-boxed sprints.
+            I'm a software architect who helps teams validate architecture, reduce risk, and accelerate delivery of generative AI applications - through focused, time-boxed sprints.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
