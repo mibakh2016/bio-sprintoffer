@@ -1,6 +1,6 @@
 const stats = [
   { value: "25+", label: "Years in Software Architecture" },
-  { value: "40+", label: "GenAI Projects Delivered" },
+  { value: "100+", label: "GenAI Projects Delivered" },
 ];
 
 const AboutSection = () => {
