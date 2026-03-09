@@ -15,7 +15,7 @@ const AboutSection = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed text-lg">
               <p>
-                Milla has 25+ years as a software architect and lead system designer, delivering architecture for autonomous tech and large-scale enterprise platforms. As former CTO of Lendindex, CA and other companies, she built reliable, high-performance architectures.
+                Milla has 25+ years as a software architect and lead system designer, delivering architecture for autonomous tech and large-scale enterprise platforms. As former CTO of Predos, Lendindex, CA and other companies, she built reliable, high-performance architectures.
               </p>
               <p>
                 She now designs production generative AI applications across the full stack:
