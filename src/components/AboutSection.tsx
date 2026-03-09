@@ -11,7 +11,7 @@ const AboutSection = () => {
           <div>
             <p className="text-sm font-display font-semibold tracking-widest uppercase text-accent mb-3">About</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-              Built for the age of AI.
+              About
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed text-lg">
               <p>
