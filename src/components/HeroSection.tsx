@@ -19,7 +19,7 @@ const HeroSection = () => {
           
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-primary-foreground mb-6 animate-fade-in-up">
             Ship GenAI apps{" "}
-            <span className="text-gradient">with confidence.</span>
+            <span className="text-gradient">faster.</span>
           </h1>
           
           <p className="text-lg sm:text-xl text-primary-foreground/70 max-w-2xl mb-10 font-body leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
