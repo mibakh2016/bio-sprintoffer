@@ -1,8 +1,6 @@
 const stats = [
   { value: "25+", label: "Years in Software Architecture" },
   { value: "40+", label: "GenAI Projects Delivered" },
-  { value: "98%", label: "Client Retention Rate" },
-  { value: "2 wk", label: "Avg. Sprint Duration" },
 ];
 
 const AboutSection = () => {
