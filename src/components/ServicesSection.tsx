@@ -23,7 +23,7 @@ const allServices = [
     icon: ShieldCheck,
     title: "Upskill Your Team",
     badge: null,
-    description: "Upskill your engineering team on GenAI best practices — from prompt engineering to evaluation frameworks and responsible AI patterns.",
+    description: "Upskill your engineering team on GenAI best practices — from model integration and evaluation frameworks to safety guardrails and production-grade AI operations.",
   },
 ];
 
