@@ -15,8 +15,8 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-[hsl(var(--cta))] text-[hsl(var(--cta-foreground))] hover:bg-[hsl(var(--cta))]/90 shadow-lg shadow-[hsl(var(--cta))]/25 font-display font-semibold tracking-wide",
-        heroOutline: "border-2 border-[hsl(var(--cta))]/40 text-[hsl(var(--cta))] hover:bg-[hsl(var(--cta))]/10 font-display font-semibold tracking-wide",
+        hero: "bg-[hsl(var(--cta))] text-[hsl(var(--cta-foreground))] hover:bg-[hsl(217,91%,50%)] hover:shadow-[0_0_20px_hsl(var(--cta)/0.5),0_0_40px_hsl(var(--cta)/0.2)] font-display font-semibold tracking-wide transition-all duration-300 shadow-lg shadow-[hsl(var(--cta))]/25",
+        heroOutline: "border-2 border-[hsl(var(--cta))]/40 text-[hsl(var(--cta))] hover:bg-[hsl(var(--cta))] hover:text-[hsl(var(--cta-foreground))] hover:border-[hsl(var(--cta))] hover:shadow-[0_0_20px_hsl(var(--cta)/0.4),0_0_40px_hsl(var(--cta)/0.15)] font-display font-semibold tracking-wide transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
