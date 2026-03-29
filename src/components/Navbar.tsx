@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="hidden sm:flex items-center gap-8">
           <a href="/#services" onClick={(e) => handleHashClick(e, "services")} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">Services</a>
           <a href="/#about" onClick={(e) => handleHashClick(e, "about")} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">About</a>
-          <a href="/expertise" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">Expertise</a>
+          <Link to="/expertise" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">Expertise</Link>
           <a href="/#contact" onClick={(e) => handleHashClick(e, "contact")} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">Contact</a>
         </div>
 
