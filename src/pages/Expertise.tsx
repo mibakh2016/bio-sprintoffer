@@ -313,7 +313,7 @@ const Expertise = () => {
 
             <div className="rounded-xl p-8 shadow-md" style={{ backgroundColor: cardBg }}>
               <h3 className="text-xl font-bold mb-4" style={{ color: blueDark }}>MARL Frameworks</h3>
-              <div className="space-y-3 text-sm leading-relaxed" style={{ color: "#34495E" }}>
+              <div className="space-y-3 text-sm leading-relaxed" style={{ color: "#000000" }}>
                 <p>
                   Traditional multi-agent reinforcement learning (MARL) frameworks lack accommodation for information exchange between agents — typically constraining agents to exchange general parameters, limiting heterogeneous behaviors.
                 </p>
