@@ -292,11 +292,6 @@ const Expertise = () => {
                 <div className="px-5 pt-4 pb-6 flex-1 flex flex-col">
                   <h3 className="text-base font-bold mb-3 leading-snug" style={{ color: "#0066CC" }}>{ref.title}</h3>
                   <p className="text-sm leading-relaxed flex-1" style={{ color: "#333333" }}>{ref.desc}</p>
-                  <div className="mt-5">
-                    <span className="inline-block px-4 py-1.5 text-xs font-bold text-white rounded cursor-pointer" style={{ backgroundColor: "#0066CC" }}>
-                      Read More
-                    </span>
-                  </div>
                 </div>
               </div>
             ))}
