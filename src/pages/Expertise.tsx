@@ -170,10 +170,6 @@ const Expertise = () => {
               </div>
             ))}
           </div>
-
-          <div className="text-center mt-10">
-            <span className="text-sm font-medium cursor-pointer" style={{ color: bluePrimary }}>Learn More</span>
-          </div>
         </div>
       </section>
 
