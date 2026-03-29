@@ -261,7 +261,7 @@ const Expertise = () => {
         <div className="container relative z-10">
           <h2 className="text-4xl font-bold mb-12 text-center text-white">Selected References</h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
               {
                 img: "/images/references/www2013.png",
@@ -286,14 +286,14 @@ const Expertise = () => {
             ].map((ref) => (
               <div key={ref.title} className="flex flex-col"
                 style={{ backgroundColor: "#FFFFFF" }}>
-                <div className="w-full h-44 overflow-hidden">
-                  <img src={ref.img} alt={ref.title} className="w-full h-full object-cover" />
+                <div className="w-full bg-white">
+                  <img src={ref.img} alt={ref.title} className="w-full aspect-[16/10] object-cover object-top" />
                 </div>
-                <div className="px-6 pt-5 pb-8 flex-1 flex flex-col">
-                  <h3 className="text-lg font-bold mb-4 leading-tight" style={{ color: "#0055CC" }}>{ref.title}</h3>
+                <div className="px-5 pt-4 pb-6 flex-1 flex flex-col">
+                  <h3 className="text-base font-bold mb-3 leading-snug" style={{ color: "#0066CC" }}>{ref.title}</h3>
                   <p className="text-sm leading-relaxed flex-1" style={{ color: "#333333" }}>{ref.desc}</p>
-                  <div className="mt-6">
-                    <span className="inline-block px-5 py-2 text-sm font-bold text-white rounded-full cursor-pointer" style={{ backgroundColor: "#0055CC" }}>
+                  <div className="mt-5">
+                    <span className="inline-block px-4 py-1.5 text-xs font-bold text-white rounded cursor-pointer" style={{ backgroundColor: "#0066CC" }}>
                       Read More
                     </span>
                   </div>
