@@ -299,7 +299,30 @@ const Expertise = () => {
         </div>
       </section>
 
-      {/* ===== MORE ABOUT ME ===== */}
+      {/* ===== MORE PAST PROJECTS ===== */}
+      <section className="py-16" style={{ backgroundColor: "#EEEEF0" }}>
+        <div className="container">
+          <h2 className="text-4xl font-bold mb-12 text-center" style={{ color: blueDark }}>More Past Projects</h2>
+
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {[
+              { year: "2017", title: "Barter Trading E-Commerce Network" },
+              { year: "2016", title: "Commodities Price Prediction Platform" },
+              { year: "2014", title: "Prediction, Monitoring & Data Hub for Labs and Doctors - for Allerlab" },
+              { year: "2006", title: "Master Data Management Platform for GlobalIDs" },
+              { year: "2004", title: "FIX Financial Data Exchange Protocol Platform for B2BITS" },
+              { year: "GE, 1999", title: "EDI B2B E-Commerce Systems for CIS Countries - for GE IS Partnership" },
+            ].map((project) => (
+              <div key={project.title} className="flex items-start gap-4 p-6"
+                style={{ backgroundColor: "#FFFFFF" }}>
+                <span className="text-sm font-bold whitespace-nowrap" style={{ color: "#0066CC" }}>{project.year}</span>
+                <p className="text-sm leading-relaxed" style={{ color: "#000000" }}>{project.title}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-16">
         <div className="container">
           <div className="rounded-2xl p-10 shadow-lg max-w-4xl mx-auto" style={{ backgroundColor: cardBg }}>
