@@ -1,5 +1,6 @@
 import { Linkedin, Mail, ArrowRight, Award, FileText, Globe, Presentation, FlaskConical, Brain, Network, Database, Bot, Cpu, Server, Gamepad2, PawPrint } from "lucide-react";
 import heroPhoto from "@/assets/mb_photo_collage.png";
+import referencesBg from "@/assets/references-bg.png";
 import { Button } from "@/components/ui/button";
 
 const goldBg = "#F5D669";
@@ -247,15 +248,14 @@ const Expertise = () => {
 
       {/* ===== SELECTED REFERENCES ===== */}
       <section className="py-16 relative overflow-hidden">
-        {/* Background: blurred photo with blue overlay, matching original */}
+        {/* Background: conference photo with blue overlay, matching original */}
         <div className="absolute inset-0">
           <img
-            src="https://millabakhareva.com/_assets/media/389f6b16de8e671c23e6619ea52ba0a7.png"
+            src={referencesBg}
             alt=""
-            className="w-full h-full object-cover scale-110"
-            style={{ filter: "blur(4px)" }}
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0" style={{ backgroundColor: "rgba(25, 55, 145, 0.78)" }} />
+          <div className="absolute inset-0" style={{ backgroundColor: "rgba(25, 55, 145, 0.7)" }} />
         </div>
 
         <div className="container relative z-10">
