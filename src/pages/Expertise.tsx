@@ -1,5 +1,6 @@
 import { Linkedin, Mail, ArrowRight, Award, FileText, Globe, Presentation, FlaskConical, Brain, Network, Database, Bot, Cpu, Server, Gamepad2, PawPrint } from "lucide-react";
 import heroPhoto from "@/assets/mb_photo_collage.png";
+import referencesBg from "@/assets/references-bg.png";
 import { Button } from "@/components/ui/button";
 
 const goldBg = "#F5D669";
