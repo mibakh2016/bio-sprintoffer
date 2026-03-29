@@ -161,7 +161,7 @@ const Expertise = () => {
                 {area.bullets.length > 0 && (
                   <ul className="space-y-1 text-left inline-block">
                     {area.bullets.map((b) => (
-                      <li key={b} className="text-sm" style={{ color: "#121219" }}>
+                      <li key={b} className="text-sm" style={{ color: "#000000" }}>
                         • {b}
                       </li>
                     ))}
