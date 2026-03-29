@@ -196,7 +196,7 @@ const Expertise = () => {
               <div key={project.title} className="p-8 text-center"
                 style={{ backgroundColor: "#FFFFFF" }}>
                 <h3 className="text-lg font-bold mb-4" style={{ color: blueDark }}>{project.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#121219" }}>{project.desc}</p>
+                <p className="text-sm leading-relaxed" style={{ color: "#000000" }}>{project.desc}</p>
               </div>
             ))}
           </div>
