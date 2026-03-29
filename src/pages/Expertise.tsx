@@ -302,21 +302,23 @@ const Expertise = () => {
       {/* ===== MORE PAST PROJECTS ===== */}
       <section className="py-16" style={{ backgroundColor: "#EEEEF0" }}>
         <div className="container">
-          <h2 className="text-4xl font-bold mb-12 text-center" style={{ color: blueDark }}>More Past Projects</h2>
+          <h2 className="text-4xl font-bold mb-12" style={{ color: blueDark }}>More Past Projects</h2>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { year: "2017", title: "Barter Trading E-Commerce Network" },
-              { year: "2016", title: "Commodities Price Prediction Platform" },
-              { year: "2014", title: "Prediction, Monitoring & Data Hub for Labs and Doctors - for Allerlab" },
-              { year: "2006", title: "Master Data Management Platform for GlobalIDs" },
-              { year: "2004", title: "FIX Financial Data Exchange Protocol Platform for B2BITS" },
-              { year: "GE, 1999", title: "EDI B2B E-Commerce Systems for CIS Countries - for GE IS Partnership" },
+              { year: "2017", title: "Barter Trading E-Commerce Network", img: "/images/projects/51720e64c082a82a0dc5e3ad9a1161c0.png" },
+              { year: "2004", title: "FIX Financial Data Exchange Protocol Platform for B2BITS", img: "/images/projects/8c36a83f6d90f05df818ff8ec730ff95.png" },
+              { year: "2006", title: "Master Data Management Platform for GlobalIDs", img: "/images/projects/7a163fdd93e6e7042ec32beff0097ff4.jpg" },
+              { year: "GE, 1999", title: "EDI B2B E-Commerce Systems for CIS Countries - for GE IS Partnership", img: "/images/projects/ef59c8fccb7b961e2fa611fa858288f9.png" },
+              { year: "2014", title: "Prediction, Monitoring & Data Hub for Labs and Doctors - for Allerlab", img: "/images/projects/647e97f83f1b6d7b25f09b25f1b0ace4.png" },
+              { year: "2016", title: "Commodities Price Prediction Platform", img: "/images/projects/e8d31a047e452efed4f24feec6e710c5.png" },
             ].map((project) => (
-              <div key={project.title} className="flex items-start gap-4 p-6"
-                style={{ backgroundColor: "#FFFFFF" }}>
-                <span className="text-sm font-bold whitespace-nowrap" style={{ color: "#0066CC" }}>{project.year}</span>
-                <p className="text-sm leading-relaxed" style={{ color: "#000000" }}>{project.title}</p>
+              <div key={project.title} className="flex flex-col" style={{ backgroundColor: "#FFFFFF" }}>
+                <img src={project.img} alt={project.title} className="w-full aspect-[16/9] object-cover" />
+                <div className="p-5 flex-1 flex flex-col">
+                  <h3 className="text-base font-bold leading-snug mb-2" style={{ color: "#1A2744" }}>{project.title}</h3>
+                  <p className="text-sm mt-auto" style={{ color: "#666666" }}>{project.year}</p>
+                </div>
               </div>
             ))}
           </div>
