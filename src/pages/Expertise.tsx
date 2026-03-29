@@ -264,29 +264,31 @@ const Expertise = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {[
               {
-                img: "https://millabakhareva.com/_assets/media/389f6b16de8e671c23e6619ea52ba0a7.png",
+                img: "/images/references/www2013.png",
                 title: "WWW2013 Annual Conference",
                 desc: "The first time we announced our AI (IP) method for life-sciences was at the WWW conference, the yearly main international academic conference on future direction of the WWW since invention of the Web.",
               },
               {
-                img: "https://millabakhareva.com/_assets/media/4bb5aa482ebfb13b65df42543c2df9e4.png",
+                img: "/images/references/blockchain.png",
                 title: "Blockchain Nation (Miami 2018)",
                 desc: "Introducing the first fully-functional blockchain-based b2b payment processing and lending network to 3,000 attendee of one of the central decentralized system events in USA.",
               },
               {
-                img: "https://millabakhareva.com/_assets/media/b4f6c73d70a53c5f83838cb8d6a291df.png",
+                img: "/images/references/patent.png",
                 title: "USA Patent Granted 2019",
                 desc: '"(AI) method and system for medical (plants) and treatment selection." Getting awarded the first US patent even in the complex AI methods field is not a record itself but still never could happen without cooperation with the great team of scientists.',
               },
               {
-                img: "https://millabakhareva.com/_assets/media/5f49ca64b637da83b2d60309f632e396.png",
+                img: "/images/references/finovate.png",
                 title: "Fintech Finovate Summit 2018 • New York",
                 desc: "Live demo for the Wall street community:  Credit score for any business and Web3-based B2B lending -powered by AI. An open score for 13M companies. When on-boarding a company, the tool does both a business and consumer KYC.",
               },
             ].map((ref) => (
               <div key={ref.title} className="flex flex-col"
                 style={{ backgroundColor: "#FFFFFF" }}>
-                <img src={ref.img} alt={ref.title} className="w-full h-40 object-cover" />
+                <div className="w-full h-44 overflow-hidden">
+                  <img src={ref.img} alt={ref.title} className="w-full h-full object-cover" />
+                </div>
                 <div className="px-6 pt-5 pb-8 flex-1 flex flex-col">
                   <h3 className="text-lg font-bold mb-4 leading-tight" style={{ color: "#0055CC" }}>{ref.title}</h3>
                   <p className="text-sm leading-relaxed flex-1" style={{ color: "#333333" }}>{ref.desc}</p>
