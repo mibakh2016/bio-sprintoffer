@@ -157,7 +157,7 @@ const Expertise = () => {
               <div key={area.title} className="p-8 text-center"
                 style={{ backgroundColor: "#FFFFFF" }}>
                 <h3 className="text-lg font-bold mb-4" style={{ color: blueDark }}>{area.title}</h3>
-                <p className="text-sm leading-relaxed mb-4" style={{ color: "#121219" }}>{area.desc}</p>
+                <p className="text-sm leading-relaxed mb-4" style={{ color: "#000000" }}>{area.desc}</p>
                 {area.bullets.length > 0 && (
                   <ul className="space-y-1 text-left inline-block">
                     {area.bullets.map((b) => (
