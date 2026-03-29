@@ -226,7 +226,7 @@ const Expertise = () => {
                 </div>
                 <div className="rounded-lg p-5 shadow-sm flex-1" style={{ backgroundColor: cardBg }}>
                   <h4 className="font-bold" style={{ color: blueDark }}>{item.title}</h4>
-                  {item.org && <p className="text-sm mt-1" style={{ color: "#7F8C8D" }}>{item.org}</p>}
+                  {item.org && <p className="text-sm mt-1" style={{ color: "#000000" }}>{item.org}</p>}
                 </div>
               </div>
             ))}
