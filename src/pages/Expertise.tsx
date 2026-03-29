@@ -274,7 +274,7 @@ const Expertise = () => {
                 desc: "Introducing the first fully-functional blockchain-based b2b payment processing and lending network to 3,000 attendee of one of the central decentralized system events in USA.",
               },
               {
-                img: "/images/references/patent-new.jpg",
+                img: "/images/references/patent.png",
                 title: "USA Patent Granted 2019",
                 desc: '"(AI) method and system for medical (plants) and treatment selection." Getting awarded the first US patent even in the complex AI methods field is not a record itself but still never could happen without cooperation with the great team of scientists.',
               },
