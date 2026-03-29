@@ -90,7 +90,7 @@ const Expertise = () => {
               <div key={service.title} className="rounded-xl p-8 shadow-md transition-all hover:shadow-xl hover:-translate-y-1"
                 style={{ backgroundColor: cardBg, borderLeft: `4px solid ${bluePrimary}` }}>
                 
-                <h3 className="text-lg font-bold mb-3" style={{ color: blueDark }}>{service.title}</h3>
+                <h3 className="text-lg font-bold mb-3" style={{ color: "#002F69" }}>{service.title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#34495E" }}>{service.desc}</p>
               </div>
             ))}
