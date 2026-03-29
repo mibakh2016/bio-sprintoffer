@@ -63,28 +63,33 @@ const Expertise = () => {
             {[
               {
                 icon: <Brain className="h-7 w-7" />,
-                title: "Gen AI App Architecture Consulting",
-                desc: "A clear application architecture including UIs, APIs, workflows, AI models, infrastructure setup, and a tech stack — tailored to your needs.",
+                title: "Gen AI Application Architecture Consulting",
+                desc: 'Get a clear application architecture, including your UIs, APIs, workflows, AI models (as well as the app usage numbers, an infrastructure set-up and a tech stack to use).',
               },
               {
                 icon: <Cpu className="h-7 w-7" />,
-                title: "Gen AI App Fast MVP (Tensors / Diffusors)",
-                desc: "Launch a scalable full-stack app with main functions that solve your problem statement — a proof-of-concept or MVP addressing real dev issues.",
+                title: "Gen AI App Fast MVP (Tensors)",
+                desc: 'Make your Gen AI solution real and any dev issues addressed by launching a scalable full-stack app with main functions that solve your "problem statement" (e.g. an MVP or a "proof-of-concept" app.',
+              },
+              {
+                icon: <Cpu className="h-7 w-7" />,
+                title: "Gen AI App Fast MVP (Diffusors)",
+                desc: 'Make your Gen AI solution real and any dev issues addressed by launching a scalable full-stack app with main functions that solve your "problem statement" (e.g. an MVP or a "proof-of-concept" app.',
               },
               {
                 icon: <Bot className="h-7 w-7" />,
-                title: "AI Agent / Multi-Agent Fast MVP",
-                desc: "Build the first agents, then scale to AI agent collaboration. Get the most out of the agent apps with multi-agent architectures.",
+                title: "An AI Agent App/ Multi Agents Fast MVP",
+                desc: "Get the most out of the agent apps. We can help you build the first agents and then scale faster to the AI agents collaboration.",
               },
               {
                 icon: <Server className="h-7 w-7" />,
-                title: "MCP Server Implementation — MVP",
-                desc: "Build infrastructure enabling your AI model and app to interact with the real world in a more precise, topic-centered manner.",
+                title: "MCP Server Implementation - MVP",
+                desc: "MCP development - the focus is on building the infrastructure that enables your AI model (& app) to interact with the real world in a more precise and topic-centered manner for better AI applications.",
               },
               {
                 icon: <FlaskConical className="h-7 w-7" />,
-                title: "Model Fine-tuning (Tensors, LoRAs)",
-                desc: "Train your AI models to make them more context-rich, smaller, or more targeted — from distilled models for local devices to proprietary-trained designs.",
+                title: "Model Fine-tuning (Tensors, LoRAS)",
+                desc: 'Train your AI models to make it more context-rich, smaller or more to-the-point for various purposes from the "distilled" models to fit your local robot to a proprietary-design -trained.',
               },
             ].map((service) => (
               <div key={service.title} className="rounded-xl p-8 shadow-md transition-all hover:shadow-xl hover:-translate-y-1 text-center"
