@@ -1,5 +1,6 @@
-import { Linkedin, Mail, ArrowRight, Award, FileText, Globe, Presentation, FlaskConical, Brain, Network, Database, Bot, Cpu, Server, Gamepad2, PawPrint } from "lucide-react";
+import { Linkedin, Mail, Award, FileText, Globe, Presentation, FlaskConical, Brain, Network, Database, Bot, Cpu, Server, Gamepad2, PawPrint } from "lucide-react";
 import heroPhoto from "@/assets/mb_photo_collage.png";
+import { Button } from "@/components/ui/button";
 
 const goldBg = "#F5D669";
 const bluePrimary = "#2874A6";
@@ -31,11 +32,11 @@ const Expertise = () => {
               <p className="text-xl lg:text-2xl leading-relaxed mb-8" style={{ color: blueDark }}>
                 Experience in AI architecture, R&D and as a CTO developing Gen AI solutions since 2008.
               </p>
-              <a href="https://calendly.com/milla-bakhareva/10-23" target="_blank" rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 rounded-full px-8 py-4 text-lg font-semibold transition-all hover:shadow-lg"
-                style={{ backgroundColor: "#E8C547", color: blueDark, border: `2px solid ${bluePrimary}30` }}>
-                Book a Consultation <ArrowRight className="h-5 w-5" />
-              </a>
+              <Button variant="hero" size="sm" asChild>
+                <a href="https://calendly.com/milla-bakhareva/10-23" target="_blank" rel="noopener noreferrer">
+                  Book a Sprint
+                </a>
+              </Button>
             </div>
             <div className="relative">
               <img
