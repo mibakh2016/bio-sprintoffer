@@ -210,12 +210,18 @@ const Expertise = () => {
 
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
+              { year: "", title: "CryptoAlpha - Crypto Assets Price Monitoring", org: "" },
+              { year: "", title: "Art Value Predictive Engine", org: "" },
+              { year: "", title: "I-Virtual - Smart Personal Profiling and Social Network", org: "" },
+              { year: "", title: "Cross-Border Payment Network", org: "" },
+              { year: "", title: "Predixo - Predictive Engine (Web Data)", org: "GE Predix" },
+              { year: "2012", title: "(Stealth) Probalistic Engine", org: "" },
               { year: "1999", title: "EDI B2B E-Commerce Systems for CIS Countries", org: "GE IS Partnership" },
               { year: "2004", title: "FIX Financial Data Exchange Protocol Platform", org: "B2BITS" },
               { year: "2006", title: "Master Data Management Platform", org: "GlobalIDs" },
-              { year: "2014", title: "Prediction, Monitoring & Data Hub for Labs and Doctors", org: "Allerlab" },
               { year: "2016", title: "Commodities Price Prediction Platform", org: "" },
               { year: "2017", title: "Barter Trading E-Commerce Network", org: "" },
+              { year: "2014", title: "Prediction, Monitoring & Data Hub for Labs and Doctors", org: "Allerlab" },
             ].map((item) => (
               <div key={item.year + item.title} className="p-8 text-center"
                 style={{ backgroundColor: "#FFFFFF" }}>
