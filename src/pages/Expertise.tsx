@@ -210,24 +210,35 @@ const Expertise = () => {
 
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { year: "", title: "CryptoAlpha - Crypto Assets Price Monitoring", org: "" },
-              { year: "", title: "Art Value Predictive Engine", org: "" },
-              { year: "", title: "I-Virtual - Smart Personal Profiling and Social Network", org: "" },
-              { year: "", title: "Cross-Border Payment Network", org: "" },
-              { year: "", title: "Predixo - Predictive Engine (Web Data)", org: "GE Predix" },
-              { year: "2012", title: "(Stealth) Probalistic Engine", org: "" },
-              { year: "1999", title: "EDI B2B E-Commerce Systems for CIS Countries", org: "GE IS Partnership" },
-              { year: "2004", title: "FIX Financial Data Exchange Protocol Platform", org: "B2BITS" },
-              { year: "2006", title: "Master Data Management Platform", org: "GlobalIDs" },
-              { year: "2016", title: "Commodities Price Prediction Platform", org: "" },
-              { year: "2017", title: "Barter Trading E-Commerce Network", org: "" },
-              { year: "2014", title: "Prediction, Monitoring & Data Hub for Labs and Doctors", org: "Allerlab" },
+              {
+                title: "(Stealth) Probalistic Engine",
+                desc: 'Building a "Probalistic" engine that can buy-pass the current "Google" web and go directly to the sources of change. Based on our first (2012) prototype, now in beta.',
+              },
+              {
+                title: "CryptoAlpha - Crypto Assets Price Monitoring",
+                desc: "We built an AI tool to derive price signals for major digital assets by tracking price actions on 62 exchanges, by monitoring major networks and social media. AI bot helped predict trade spikes and price.",
+              },
+              {
+                title: "Art Value Predictive Engine",
+                desc: 'Prototyped a platform that uses ML and statistical modeling to deliver intelligence for art investment. The AI creates instant automatic art valuations for the "blue-chip" artworks.',
+              },
+              {
+                title: "I-Virtual - Smart Personal Profiling and Social Network",
+                desc: 'Reinventing (online) social networking with the smart "multi-faceted" personal profiles, specialized models and inference engines.',
+              },
+              {
+                title: "Cross-Border Payment Network",
+                desc: "Payment processing system for $2 trillion/Y in cross-border payments. The most common method to move funds across borders is still SWIFT, we introduced an open payment network for 13M businesses.",
+              },
+              {
+                title: "Predixo - Predictive Engine (Web Data)",
+                desc: "A web-wide platform for data monitoring and prediction to help a user detect (automatically) new events before they become visible. Certain assets were acquired by GE (became - GE Predix).",
+              },
             ].map((item) => (
-              <div key={item.year + item.title} className="p-8 text-center"
+              <div key={item.title} className="p-8 text-center"
                 style={{ backgroundColor: "#FFFFFF" }}>
-                <p className="text-sm font-bold mb-2" style={{ color: bluePrimary }}>{item.year}</p>
-                <h3 className="text-lg font-bold mb-2" style={{ color: blueDark }}>{item.title}</h3>
-                {item.org && <p className="text-sm" style={{ color: "#000000" }}>{item.org}</p>}
+                <h3 className="text-lg font-bold mb-4" style={{ color: blueDark }}>{item.title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: "#000000" }}>{item.desc}</p>
               </div>
             ))}
           </div>
