@@ -314,7 +314,7 @@ const Expertise = () => {
               { year: "2016", title: "Commodities Price Prediction Platform", img: "/images/projects/e8d31a047e452efed4f24feec6e710c5.png" },
             ].map((project) => (
               <div key={project.title} className="flex flex-col" style={{ backgroundColor: "#FFFFFF" }}>
-                <img src={project.img} alt={project.title} className="w-full aspect-[16/9] object-cover" />
+                <img src={project.img} alt={project.title} className="w-full aspect-[5/3] object-cover" />
                 <div className="p-5 flex-1 flex flex-col">
                   <h3 className="text-base font-bold leading-snug mb-2" style={{ color: "#1A2744" }}>{project.title}</h3>
                   <p className="text-sm mt-auto" style={{ color: "#666666" }}>{project.year}</p>
