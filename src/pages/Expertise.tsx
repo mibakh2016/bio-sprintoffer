@@ -50,7 +50,7 @@ const Expertise = () => {
       </section>
 
       {/* ===== CONSULTING SERVICES ===== */}
-      <section className="py-16" style={{ backgroundColor: "#FFFFFF" }}>
+      <section className="py-16" style={{ backgroundColor: "#EEEEF0" }}>
         <div className="container">
           <h2 className="text-4xl font-bold mb-4 text-center" style={{ color: blueDark }}>
             Gen AI Application Architecture Services
