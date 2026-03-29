@@ -11,7 +11,6 @@ const Navbar = () => {
         <div className="hidden sm:flex items-center gap-8">
           <a href="#services" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">Services</a>
           <a href="#about" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">About</a>
-          <a href="/experience" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">Experience</a>
           <a href="#contact" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">Contact</a>
         </div>
 
