@@ -41,7 +41,7 @@ const Expertise = () => {
               <img
                 src={heroPhoto}
                 alt="Milla Bakhareva"
-                className="rounded-xl shadow-2xl w-full max-w-md mx-auto object-cover"
+                className="w-full max-w-md mx-auto object-cover"
               />
             </div>
           </div>
