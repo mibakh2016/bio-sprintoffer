@@ -87,11 +87,10 @@ const Expertise = () => {
                 desc: "Train your AI models to make them more context-rich, smaller, or more targeted — from distilled models for local devices to proprietary-trained designs.",
               },
             ].map((service) => (
-              <div key={service.title} className="rounded-xl p-8 shadow-md transition-all hover:shadow-xl hover:-translate-y-1"
-                style={{ backgroundColor: cardBg, borderLeft: `4px solid ${bluePrimary}` }}>
-                
-                <h3 className="text-lg font-bold mb-3" style={{ color: "#5097DA" }}>{service.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#34495E" }}>{service.desc}</p>
+              <div key={service.title} className="rounded-xl p-8 shadow-md transition-all hover:shadow-xl hover:-translate-y-1 text-center"
+                style={{ backgroundColor: "#FFFFFF" }}>
+                <h3 className="text-lg font-bold mb-3" style={{ color: "#ED1D24" }}>{service.title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: "#000000" }}>{service.desc}</p>
               </div>
             ))}
           </div>
