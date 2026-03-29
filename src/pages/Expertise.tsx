@@ -203,31 +203,25 @@ const Expertise = () => {
         </div>
       </section>
 
-      {/* ===== SELECTED EXPERIENCE TIMELINE ===== */}
-      <section className="py-16">
+      {/* ===== SELECTED EXPERIENCE ===== */}
+      <section className="py-16" style={{ backgroundColor: "#EEEEF0" }}>
         <div className="container">
           <h2 className="text-4xl font-bold mb-12 text-center" style={{ color: blueDark }}>Selected Experience</h2>
 
-          <div className="max-w-3xl mx-auto space-y-0 relative">
-            <div className="absolute left-6 top-0 bottom-0 w-0.5" style={{ backgroundColor: `${bluePrimary}30` }} />
-
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { year: "1999", title: "EDI B2B E-Commerce Systems", org: "GE IS Partnership" },
+              { year: "1999", title: "EDI B2B E-Commerce Systems for CIS Countries", org: "GE IS Partnership" },
               { year: "2004", title: "FIX Financial Data Exchange Protocol Platform", org: "B2BITS" },
               { year: "2006", title: "Master Data Management Platform", org: "GlobalIDs" },
               { year: "2014", title: "Prediction, Monitoring & Data Hub for Labs and Doctors", org: "Allerlab" },
               { year: "2016", title: "Commodities Price Prediction Platform", org: "" },
               { year: "2017", title: "Barter Trading E-Commerce Network", org: "" },
             ].map((item) => (
-              <div key={item.year + item.title} className="flex items-start gap-6 pb-8 relative">
-                <div className="flex-shrink-0 z-10 h-12 w-12 rounded-full flex items-center justify-center text-white text-xs font-bold shadow-md"
-                  style={{ backgroundColor: bluePrimary }}>
-                  {item.year}
-                </div>
-                <div className="rounded-lg p-5 shadow-sm flex-1" style={{ backgroundColor: cardBg }}>
-                  <h4 className="font-bold" style={{ color: blueDark }}>{item.title}</h4>
-                  {item.org && <p className="text-sm mt-1" style={{ color: "#000000" }}>{item.org}</p>}
-                </div>
+              <div key={item.year + item.title} className="p-8 text-center"
+                style={{ backgroundColor: "#FFFFFF" }}>
+                <p className="text-sm font-bold mb-2" style={{ color: bluePrimary }}>{item.year}</p>
+                <h3 className="text-lg font-bold mb-2" style={{ color: blueDark }}>{item.title}</h3>
+                {item.org && <p className="text-sm" style={{ color: "#000000" }}>{item.org}</p>}
               </div>
             ))}
           </div>
