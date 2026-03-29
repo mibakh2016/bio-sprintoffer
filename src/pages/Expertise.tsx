@@ -273,11 +273,13 @@ const Expertise = () => {
                 desc: "Live demo for the Wall street community: Credit score for any business and Web3-based B2B lending -powered by AI. An open score for 13M companies. When on-boarding a company, the tool does both a business and consumer KYC.",
               },
             ].map((ref) => (
-              <div key={ref.title} className="p-6 text-center"
+              <div key={ref.title} className="overflow-hidden"
                 style={{ backgroundColor: "#FFFFFF" }}>
-                <img src={ref.img} alt={ref.title} className="w-full h-40 object-contain mb-4" />
-                <h3 className="text-base font-bold mb-3" style={{ color: blueDark }}>{ref.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#000000" }}>{ref.desc}</p>
+                <img src={ref.img} alt={ref.title} className="w-full h-44 object-cover" />
+                <div className="p-5">
+                  <h3 className="text-base font-bold mb-3" style={{ color: "#0088CC" }}>{ref.title}</h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "#000000" }}>{ref.desc}</p>
+                </div>
               </div>
             ))}
           </div>
