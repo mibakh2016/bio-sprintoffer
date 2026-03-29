@@ -132,50 +132,50 @@ const Expertise = () => {
       </section>
 
       {/* ===== R&D AREAS ===== */}
-      <section className="py-16">
+      <section className="py-16" style={{ backgroundColor: "#EEEEF0" }}>
         <div className="container">
           <h2 className="text-4xl font-bold mb-12 text-center" style={{ color: blueDark }}>R&D Areas</h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
               {
-                icon: <Network className="h-8 w-8" />,
-                title: "Multi-Agent Systems",
-                desc: "Developing non-biased assistants across specific knowledge domains with a novel approach to data curation and processing.",
-                bullets: ["Agents theory", "Software agents and the web", "Agent-based AI architectures"],
+                title: "Multi - Agent Systems",
+                desc: "Developing non-biased assistants across any specific knowledge domain with our new approach to data curation and processing.",
+                bullets: ["Agents theory", "Software agents and the web", "Agent-based AI architectures."],
               },
               {
-                icon: <Database className="h-8 w-8" />,
                 title: "Knowledge Graphs",
-                desc: "Adding semantics (ontologies, knowledge representation) to training data enables powerful Gen AI applications. Focused on leading this vision to its full potential.",
+                desc: "Adding Semantic (ontologies, knowledge representation) to Training Data allows to build lots of powerful useful gen AI applications. Now focusing on leading this vision to its full potential.",
                 bullets: [],
               },
               {
-                icon: <Brain className="h-8 w-8" />,
                 title: "Reinforcement Learning",
-                desc: "Proprietary MARL frameworks for accelerated agent training. Models can be trained faster with novel MARL approaches.",
-                bullets: ["MAS related to AI Modelling", 'GNN-based "free info exchange"'],
+                desc: 'We work on proprietary MARL frameworks for accelerated agent training. The models can be trained faster with our proprietary MARL framework for accelerated training.',
+                bullets: ["MAS related to AI Modelling", 'GNN-based "free info exchange".'],
               },
             ].map((area) => (
-              <div key={area.title} className="rounded-xl p-8 shadow-md hover:shadow-xl transition-all"
-                style={{ backgroundColor: cardBg }}>
-                <div className="inline-flex h-14 w-14 items-center justify-center rounded-lg mb-5"
-                  style={{ backgroundColor: `${bluePrimary}15`, color: bluePrimary }}>
-                  {area.icon}
-                </div>
-                <h3 className="text-xl font-bold mb-3" style={{ color: blueDark }}>{area.title}</h3>
-                <p className="text-sm leading-relaxed mb-4" style={{ color: "#34495E" }}>{area.desc}</p>
+              <div key={area.title} className="p-8 text-center"
+                style={{ backgroundColor: "#FFFFFF" }}>
+                <h3 className="text-lg font-bold mb-4" style={{ color: blueDark }}>{area.title}</h3>
+                <p className="text-sm leading-relaxed mb-4" style={{ color: "#121219" }}>{area.desc}</p>
                 {area.bullets.length > 0 && (
-                  <ul className="space-y-1">
+                  <ul className="space-y-1 text-left inline-block">
                     {area.bullets.map((b) => (
-                      <li key={b} className="text-sm flex items-start gap-2" style={{ color: "#34495E" }}>
-                        <span style={{ color: bluePrimary }}>•</span> {b}
+                      <li key={b} className="text-sm" style={{ color: "#121219" }}>
+                        • {b}
                       </li>
                     ))}
                   </ul>
                 )}
+                <div className="mt-4">
+                  <span className="text-sm font-medium cursor-pointer" style={{ color: bluePrimary }}>Read More</span>
+                </div>
               </div>
             ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <span className="text-sm font-medium cursor-pointer" style={{ color: bluePrimary }}>Learn More</span>
           </div>
         </div>
       </section>
