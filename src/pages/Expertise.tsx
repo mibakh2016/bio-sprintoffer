@@ -174,7 +174,7 @@ const Expertise = () => {
       </section>
 
       {/* ===== SELECTED PROJECTS ===== */}
-      <section className="py-16" style={{ backgroundColor: "#EEEEF0" }}>
+      <section className="py-16" style={{ backgroundColor: "#FFFFFF" }}>
         <div className="container">
           <h2 className="text-4xl font-bold mb-12 text-center" style={{ color: blueDark }}>Selected Projects</h2>
 
