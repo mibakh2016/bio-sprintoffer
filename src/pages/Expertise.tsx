@@ -246,37 +246,37 @@ const Expertise = () => {
       </section>
 
       {/* ===== SELECTED REFERENCES ===== */}
-      <section className="py-16">
+      <section className="py-16" style={{ backgroundColor: "#EEEEF0" }}>
         <div className="container">
           <h2 className="text-4xl font-bold mb-12 text-center" style={{ color: blueDark }}>Selected References</h2>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
               {
-                icon: <Globe className="h-7 w-7" />,
+                img: "https://millabakhareva.com/_assets/media/389f6b16de8e671c23e6619ea52ba0a7.png",
                 title: "WWW2013 Annual Conference",
-                desc: "Announced an AI method for life-sciences at the WWW conference — the main international academic conference on the future direction of the World Wide Web.",
+                desc: "The first time we announced our AI (IP) method for life-sciences was at the WWW conference, the yearly main international academic conference on future direction of the WWW since invention of the Web.",
               },
               {
-                icon: <Presentation className="h-7 w-7" />,
+                img: "https://millabakhareva.com/_assets/media/4bb5aa482ebfb13b65df42543c2df9e4.png",
                 title: "Blockchain Nation (Miami 2018)",
-                desc: "Introduced the first fully-functional blockchain-based B2B payment processing and lending network to 3,000 attendees at a major decentralized systems event.",
+                desc: "Introducing the first fully-functional blockchain-based b2b payment processing and lending network to 3,000 attendee of one of the central decentralized system events in USA.",
               },
               {
-                icon: <Award className="h-7 w-7" />,
+                img: "https://millabakhareva.com/_assets/media/b4f6c73d70a53c5f83838cb8d6a291df.png",
                 title: "USA Patent Granted 2019",
-                desc: "Awarded a US patent for an AI method and system for medical treatment selection — a complex AI methods achievement made possible by a great team of scientists.",
+                desc: '"(AI) method and system for medical (plants) and treatment selection." Getting awarded the first US patent even in the complex AI methods field is not a record itself but still never could happen without cooperation with the great team of scientists.',
               },
               {
-                icon: <FileText className="h-7 w-7" />,
-                title: "Finovate Summit 2018 — New York",
-                desc: "Live demo for the Wall Street community: AI-powered credit scoring for any business and Web3-based B2B lending — an open score for 13M companies.",
+                img: "https://millabakhareva.com/_assets/media/5f49ca64b637da83b2d60309f632e396.png",
+                title: "Fintech Finovate Summit 2018 • New York",
+                desc: "Live demo for the Wall street community: Credit score for any business and Web3-based B2B lending -powered by AI. An open score for 13M companies. When on-boarding a company, the tool does both a business and consumer KYC.",
               },
             ].map((ref) => (
-              <div key={ref.title} className="rounded-xl p-8 shadow-md hover:shadow-xl transition-all"
-                style={{ backgroundColor: cardBg }}>
-                <div className="mb-4" style={{ color: bluePrimary }}>{ref.icon}</div>
-                <h3 className="text-lg font-bold mb-3" style={{ color: blueDark }}>{ref.title}</h3>
+              <div key={ref.title} className="p-6 text-center"
+                style={{ backgroundColor: "#FFFFFF" }}>
+                <img src={ref.img} alt={ref.title} className="w-full h-40 object-contain mb-4" />
+                <h3 className="text-base font-bold mb-3" style={{ color: blueDark }}>{ref.title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#000000" }}>{ref.desc}</p>
               </div>
             ))}
