@@ -178,45 +178,25 @@ const Expertise = () => {
         <div className="container">
           <h2 className="text-4xl font-bold mb-12 text-center" style={{ color: blueDark }}>Selected Projects</h2>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
               {
                 title: "Personalized Smart Assistants (Biotech)",
-                desc: "AI assistant offering on-demand food discovery, recommendation, and delivery personalized by person and location. Launched and funded.",
+                desc: 'Built an AI assistant offering a "Pandora" like on-demand food discovery, recommendation, and delivery in "one click" personalized by person and location. (Launched, funded)',
               },
               {
-                title: "Decentralized Cap Market Platform",
-                desc: "One of the first platforms where company equity is split into digital shares and offered to buyers via an app-based smart exchange. (Stealth)",
+                title: "Decentralized Cap Market Platform (Distributed Sys)",
+                desc: 'Building one of the first-of-its-kind platforms where a company equity is split into digital shares and offered up to buyers via the app-based "smart" exchange. (Stealth)',
               },
               {
                 title: "Specialized Health K-Engines (Biotech)",
-                desc: "Vertical search and recommendation knowledge engines for specific health conditions, powering specialized AIs with custom-built inference engines.",
-              },
-              {
-                title: "Probabilistic Engine",
-                desc: "An engine that can bypass the current web and go directly to the sources of change. Based on a 2012 prototype, now in beta.",
-              },
-              {
-                title: "CryptoAlpha — Crypto Assets Price Monitoring",
-                desc: "AI tool deriving price signals for major digital assets by tracking price actions on 62 exchanges and monitoring major networks and social media.",
-              },
-              {
-                title: "Art Value Predictive Engine",
-                desc: "Platform using ML and statistical modeling to deliver intelligence for art investment, creating instant automatic valuations for blue-chip artworks.",
-              },
-              {
-                title: "I-Virtual — Smart Personal Profiling",
-                desc: "Reinventing online social networking with smart multi-faceted personal profiles, specialized models, and inference engines.",
-              },
-              {
-                title: "Cross-Border Payment Network",
-                desc: "Payment processing system for cross-border payments. Introduced an open payment network for 13M businesses as an alternative to traditional methods.",
+                desc: "We are developing (vertical) search and recommendation (knowledge) engines for specific health conditions. They can power the specialized AIs. (We offer custom-built inference engines)",
               },
             ].map((project) => (
-              <div key={project.title} className="rounded-xl p-8 shadow-md hover:shadow-xl transition-all"
-                style={{ backgroundColor: cardBg, borderTop: `3px solid ${blueLight}` }}>
-                <h3 className="text-lg font-bold mb-3" style={{ color: blueDark }}>{project.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#34495E" }}>{project.desc}</p>
+              <div key={project.title} className="p-8 text-center"
+                style={{ backgroundColor: "#FFFFFF" }}>
+                <h3 className="text-lg font-bold mb-4" style={{ color: blueDark }}>{project.title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: "#121219" }}>{project.desc}</p>
               </div>
             ))}
           </div>
