@@ -103,20 +103,29 @@ const Expertise = () => {
       </section>
 
       {/* ===== ABOUT ===== */}
-      <section className="py-16">
+      <section className="py-16" style={{ backgroundColor: "#EEEEF0" }}>
         <div className="container">
-          <div className="rounded-2xl p-10 shadow-lg max-w-4xl mx-auto" style={{ backgroundColor: cardBg }}>
-            <h2 className="text-3xl font-bold mb-2" style={{ color: blueDark }}>
-              Tech Solution Architect, CTO, Board, Investor
-            </h2>
-            <div className="h-1 w-20 rounded mb-6" style={{ backgroundColor: bluePrimary }} />
-            <div className="space-y-4 text-base leading-relaxed" style={{ color: "#2C3E50" }}>
-              <p>
-                Experienced architect with 30 years of leading projects, trained in computer science including distributed system design and technology commercialization.
-              </p>
-              <p>
-                Has worked for various companies as a CTO and tech architect, helping design and build Gen AI apps. Most skilled in system architecture and leading teams building full-stack scalable solutions.
-              </p>
+          <h2 className="text-4xl font-bold mb-12 text-center" style={{ color: "#002F69" }}>&lt;About&gt;</h2>
+          <div className="grid lg:grid-cols-2 gap-10 items-center max-w-5xl mx-auto">
+            <div>
+              <img
+                src="https://millabakhareva.com/_assets/media/5bb13c84b79ba60ae3c8d270a540ab08.jpg"
+                alt="Milla Bakhareva"
+                className="rounded-xl w-full max-w-sm mx-auto object-cover"
+              />
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-4" style={{ color: "#002F69" }}>
+                Tech Solution Architect, CTO, Board, Investor
+              </h3>
+              <div className="space-y-4 text-base leading-relaxed" style={{ color: "#121219" }}>
+                <p>
+                  I'm an experienced architect with 30 years of leading projects trained in computer science, including distributed system design and (new tech) commercialization.
+                </p>
+                <p>
+                  I have been working for various companies as a CTO and a tech architect helping to design & build Gen AI apps. I am most skilled in system architecture, and leading teams building full-stack scalable solutions.
+                </p>
+              </div>
             </div>
           </div>
         </div>
