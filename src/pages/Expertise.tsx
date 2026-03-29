@@ -89,7 +89,7 @@ const Expertise = () => {
             ].map((service) => (
               <div key={service.title} className="rounded-xl p-8 shadow-md transition-all hover:shadow-xl hover:-translate-y-1"
                 style={{ backgroundColor: cardBg, borderLeft: `4px solid ${bluePrimary}` }}>
-                <div className="mb-4" style={{ color: bluePrimary }}>{service.icon}</div>
+                
                 <h3 className="text-lg font-bold mb-3" style={{ color: blueDark }}>{service.title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#34495E" }}>{service.desc}</p>
               </div>
