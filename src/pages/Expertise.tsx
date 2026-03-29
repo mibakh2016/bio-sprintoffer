@@ -246,9 +246,9 @@ const Expertise = () => {
       </section>
 
       {/* ===== SELECTED REFERENCES ===== */}
-      <section className="py-16" style={{ backgroundColor: "#EEEEF0" }}>
+      <section className="py-16" style={{ backgroundColor: "#1B3A5C" }}>
         <div className="container">
-          <h2 className="text-4xl font-bold mb-12 text-center" style={{ color: blueDark }}>Selected References</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center text-white">Selected References</h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
@@ -273,10 +273,10 @@ const Expertise = () => {
                 desc: "Live demo for the Wall street community: Credit score for any business and Web3-based B2B lending -powered by AI. An open score for 13M companies. When on-boarding a company, the tool does both a business and consumer KYC.",
               },
             ].map((ref) => (
-              <div key={ref.title} className="overflow-hidden"
+              <div key={ref.title} className="overflow-hidden flex flex-col"
                 style={{ backgroundColor: "#FFFFFF" }}>
-                <img src={ref.img} alt={ref.title} className="w-full h-44 object-cover" />
-                <div className="p-5">
+                <img src={ref.img} alt={ref.title} className="w-full aspect-[4/3] object-cover" />
+                <div className="p-5 flex-1">
                   <h3 className="text-base font-bold mb-3" style={{ color: "#0088CC" }}>{ref.title}</h3>
                   <p className="text-sm leading-relaxed" style={{ color: "#000000" }}>{ref.desc}</p>
                 </div>
