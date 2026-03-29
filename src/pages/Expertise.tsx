@@ -343,7 +343,7 @@ const Expertise = () => {
             <div className="rounded-xl p-8 shadow-md hover:shadow-xl transition-all" style={{ backgroundColor: cardBg }}>
               <div className="mb-4" style={{ color: bluePrimary }}><PawPrint className="h-8 w-8" /></div>
               <h3 className="text-xl font-bold mb-3" style={{ color: blueDark }}>Extinct Animals — Who is Next?</h3>
-              <p className="text-sm leading-relaxed" style={{ color: "#34495E" }}>
+              <p className="text-sm leading-relaxed" style={{ color: "#000000" }}>
                 An AI-based system that knows the current condition of animal species and can predict when an animal goes extinct and what to do. Working to stop extinction with the help of the open-source community via various AI projects.
               </p>
             </div>
