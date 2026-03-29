@@ -111,7 +111,7 @@ const Expertise = () => {
               <img
                 src="https://millabakhareva.com/_assets/media/5bb13c84b79ba60ae3c8d270a540ab08.jpg"
                 alt="Milla Bakhareva"
-                className="rounded-xl w-full max-w-[240px] mx-auto object-cover"
+                className="w-full max-w-[240px] mx-auto object-cover"
               />
             </div>
             <div>
