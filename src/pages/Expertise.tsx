@@ -1,4 +1,4 @@
-import { Linkedin, Mail, Award, FileText, Globe, Presentation, FlaskConical, Brain, Network, Database, Bot, Cpu, Server, Gamepad2, PawPrint } from "lucide-react";
+import { Linkedin, Mail, ArrowRight, Award, FileText, Globe, Presentation, FlaskConical, Brain, Network, Database, Bot, Cpu, Server, Gamepad2, PawPrint } from "lucide-react";
 import heroPhoto from "@/assets/mb_photo_collage.png";
 import { Button } from "@/components/ui/button";
 
@@ -32,9 +32,9 @@ const Expertise = () => {
               <p className="text-xl lg:text-2xl leading-relaxed mb-8" style={{ color: blueDark }}>
                 Experience in AI architecture, R&D and as a CTO developing Gen AI solutions since 2008.
               </p>
-              <Button variant="hero" size="sm" asChild>
+              <Button variant="hero" size="lg" className="text-base px-8 py-6" asChild>
                 <a href="https://calendly.com/milla-bakhareva/10-23" target="_blank" rel="noopener noreferrer">
-                  Book a Sprint
+                  Book a Sprint <ArrowRight className="ml-1 h-5 w-5" />
                 </a>
               </Button>
             </div>
