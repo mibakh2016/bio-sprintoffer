@@ -1,16 +1,19 @@
-import { useLocation, useNavigate, Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+
+const sectionLinkClasses = "text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium";
 
 const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const handleHashClick = (e: React.MouseEvent<HTMLAnchorElement>, hash: string) => {
+  const handleSectionNavigation = (sectionId: string) => {
     if (location.pathname === "/") {
-      e.preventDefault();
-      document.getElementById(hash)?.scrollIntoView({ behavior: "smooth" });
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+      return;
     }
-    // Otherwise, let the browser navigate to /#hash normally
+
+    navigate(`/#${sectionId}`);
   };
 
   return (
@@ -19,16 +22,24 @@ const Navbar = () => {
         <Link to="/" className="font-display text-lg font-bold text-primary-foreground tracking-tight">
           ArchitectAI<span className="text-glow">.</span>
         </Link>
-        
-        <div className="hidden sm:flex items-center gap-8">
-          <a href="/#services" onClick={(e) => handleHashClick(e, "services")} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">Services</a>
-          <a href="/#about" onClick={(e) => handleHashClick(e, "about")} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">About</a>
-          <Link to="/expertise" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">Expertise</Link>
-          <a href="/#contact" onClick={(e) => handleHashClick(e, "contact")} className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">Contact</a>
+
+        <div className="hidden items-center gap-8 sm:flex">
+          <button type="button" onClick={() => handleSectionNavigation("services")} className={sectionLinkClasses}>
+            Services
+          </button>
+          <button type="button" onClick={() => handleSectionNavigation("about")} className={sectionLinkClasses}>
+            About
+          </button>
+          <Link to="/expertise" className={sectionLinkClasses}>
+            Expertise
+          </Link>
+          <button type="button" onClick={() => handleSectionNavigation("contact")} className={sectionLinkClasses}>
+            Contact
+          </button>
         </div>
 
-        <Button variant="hero" size="sm" asChild>
-          <a href="/#contact" onClick={(e) => handleHashClick(e, "contact")}>Book a Sprint</a>
+        <Button variant="hero" size="sm" onClick={() => handleSectionNavigation("contact")}>
+          Book a Sprint
         </Button>
       </div>
     </nav>
