@@ -33,9 +33,6 @@ const Navbar = () => {
           <Link to="/expertise" className={sectionLinkClasses}>
             Expertise
           </Link>
-          <button type="button" onClick={() => handleSectionNavigation("contact")} className={sectionLinkClasses}>
-            Contact
-          </button>
         </div>
 
         <Button variant="hero" size="sm" onClick={() => handleSectionNavigation("contact")}>
