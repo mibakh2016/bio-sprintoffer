@@ -118,7 +118,7 @@ const Expertise = () => {
               <h3 className="text-2xl font-bold mb-4" style={{ color: "#002F69" }}>
                 Tech Solution Architect, CTO, Board, Investor
               </h3>
-              <div className="space-y-4 text-base leading-relaxed" style={{ color: "#121219" }}>
+              <div className="space-y-4 text-base leading-relaxed" style={{ color: "#000000" }}>
                 <p>
                   I'm an experienced architect with 30 years of leading projects trained in computer science, including distributed system design and (new tech) commercialization.
                 </p>
@@ -157,11 +157,11 @@ const Expertise = () => {
               <div key={area.title} className="p-8 text-center"
                 style={{ backgroundColor: "#FFFFFF" }}>
                 <h3 className="text-lg font-bold mb-4" style={{ color: blueDark }}>{area.title}</h3>
-                <p className="text-sm leading-relaxed mb-4" style={{ color: "#121219" }}>{area.desc}</p>
+                <p className="text-sm leading-relaxed mb-4" style={{ color: "#000000" }}>{area.desc}</p>
                 {area.bullets.length > 0 && (
                   <ul className="space-y-1 text-left inline-block">
                     {area.bullets.map((b) => (
-                      <li key={b} className="text-sm" style={{ color: "#121219" }}>
+                      <li key={b} className="text-sm" style={{ color: "#000000" }}>
                         • {b}
                       </li>
                     ))}
@@ -196,7 +196,7 @@ const Expertise = () => {
               <div key={project.title} className="p-8 text-center"
                 style={{ backgroundColor: "#FFFFFF" }}>
                 <h3 className="text-lg font-bold mb-4" style={{ color: blueDark }}>{project.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#121219" }}>{project.desc}</p>
+                <p className="text-sm leading-relaxed" style={{ color: "#000000" }}>{project.desc}</p>
               </div>
             ))}
           </div>
@@ -226,7 +226,7 @@ const Expertise = () => {
                 </div>
                 <div className="rounded-lg p-5 shadow-sm flex-1" style={{ backgroundColor: cardBg }}>
                   <h4 className="font-bold" style={{ color: blueDark }}>{item.title}</h4>
-                  {item.org && <p className="text-sm mt-1" style={{ color: "#7F8C8D" }}>{item.org}</p>}
+                  {item.org && <p className="text-sm mt-1" style={{ color: "#000000" }}>{item.org}</p>}
                 </div>
               </div>
             ))}
@@ -266,7 +266,7 @@ const Expertise = () => {
                 style={{ backgroundColor: cardBg }}>
                 <div className="mb-4" style={{ color: bluePrimary }}>{ref.icon}</div>
                 <h3 className="text-lg font-bold mb-3" style={{ color: blueDark }}>{ref.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#34495E" }}>{ref.desc}</p>
+                <p className="text-sm leading-relaxed" style={{ color: "#000000" }}>{ref.desc}</p>
               </div>
             ))}
           </div>
@@ -278,7 +278,7 @@ const Expertise = () => {
         <div className="container">
           <div className="rounded-2xl p-10 shadow-lg max-w-4xl mx-auto" style={{ backgroundColor: cardBg }}>
             <h2 className="text-3xl font-bold mb-6" style={{ color: blueDark }}>More About Me</h2>
-            <div className="space-y-4 text-base leading-relaxed" style={{ color: "#2C3E50" }}>
+            <div className="space-y-4 text-base leading-relaxed" style={{ color: "#000000" }}>
               <p>
                 Currently a Deep Learning Researcher and AI architecture consultant. Previously CTO and board director at Datrixo, focused on developing AI capabilities for commercial organizations — managing engineering teams and serving as technical lead for multiple data analysis projects.
               </p>
@@ -301,7 +301,7 @@ const Expertise = () => {
           <div className="grid lg:grid-cols-2 gap-8">
             <div className="rounded-xl p-8 shadow-md" style={{ backgroundColor: cardBg }}>
               <h3 className="text-xl font-bold mb-4" style={{ color: blueDark }}>Multi-Agent Cooperative Systems</h3>
-              <div className="space-y-3 text-sm leading-relaxed" style={{ color: "#34495E" }}>
+              <div className="space-y-3 text-sm leading-relaxed" style={{ color: "#000000" }}>
                 <p>
                   Research focuses on autonomous decentralized agents and the information exchange between them, developing interaction policies that lead to more collaborative systems.
                 </p>
@@ -313,7 +313,7 @@ const Expertise = () => {
 
             <div className="rounded-xl p-8 shadow-md" style={{ backgroundColor: cardBg }}>
               <h3 className="text-xl font-bold mb-4" style={{ color: blueDark }}>MARL Frameworks</h3>
-              <div className="space-y-3 text-sm leading-relaxed" style={{ color: "#34495E" }}>
+              <div className="space-y-3 text-sm leading-relaxed" style={{ color: "#000000" }}>
                 <p>
                   Traditional multi-agent reinforcement learning (MARL) frameworks lack accommodation for information exchange between agents — typically constraining agents to exchange general parameters, limiting heterogeneous behaviors.
                 </p>
@@ -335,7 +335,7 @@ const Expertise = () => {
             <div className="rounded-xl p-8 shadow-md hover:shadow-xl transition-all" style={{ backgroundColor: cardBg }}>
               <div className="mb-4" style={{ color: bluePrimary }}><Gamepad2 className="h-8 w-8" /></div>
               <h3 className="text-xl font-bold mb-3" style={{ color: blueDark }}>Perspective Multi-Player Games</h3>
-              <p className="text-sm leading-relaxed" style={{ color: "#34495E" }}>
+              <p className="text-sm leading-relaxed" style={{ color: "#000000" }}>
                 A multi-agent platform for building complex multi-player gaming systems where each player has their own rules and unique perspective of the system.
               </p>
             </div>
@@ -343,7 +343,7 @@ const Expertise = () => {
             <div className="rounded-xl p-8 shadow-md hover:shadow-xl transition-all" style={{ backgroundColor: cardBg }}>
               <div className="mb-4" style={{ color: bluePrimary }}><PawPrint className="h-8 w-8" /></div>
               <h3 className="text-xl font-bold mb-3" style={{ color: blueDark }}>Extinct Animals — Who is Next?</h3>
-              <p className="text-sm leading-relaxed" style={{ color: "#34495E" }}>
+              <p className="text-sm leading-relaxed" style={{ color: "#000000" }}>
                 An AI-based system that knows the current condition of animal species and can predict when an animal goes extinct and what to do. Working to stop extinction with the help of the open-source community via various AI projects.
               </p>
             </div>
