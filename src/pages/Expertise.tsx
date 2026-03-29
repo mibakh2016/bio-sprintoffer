@@ -286,12 +286,15 @@ const Expertise = () => {
             ].map((ref) => (
               <div key={ref.title} className="flex flex-col"
                 style={{ backgroundColor: "#FFFFFF" }}>
-                <div className="w-full bg-white" style={{ padding: "12px 12px 0 12px" }}>
-                  <img src={ref.img} alt={ref.title} className="w-full h-48 object-contain" />
-                </div>
+                <img src={ref.img} alt={ref.title} className="w-full h-40 object-cover" />
                 <div className="px-6 pt-5 pb-8 flex-1 flex flex-col">
-                  <h3 className="text-lg font-bold mb-4 leading-tight" style={{ color: "#0077BB" }}>{ref.title}</h3>
-                  <p className="text-sm leading-relaxed" style={{ color: "#333333" }}>{ref.desc}</p>
+                  <h3 className="text-lg font-bold mb-4 leading-tight" style={{ color: "#0055CC" }}>{ref.title}</h3>
+                  <p className="text-sm leading-relaxed flex-1" style={{ color: "#333333" }}>{ref.desc}</p>
+                  <div className="mt-6">
+                    <span className="inline-block px-5 py-2 text-sm font-bold text-white rounded-full cursor-pointer" style={{ backgroundColor: "#0055CC" }}>
+                      Read More
+                    </span>
+                  </div>
                 </div>
               </div>
             ))}
