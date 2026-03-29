@@ -246,11 +246,21 @@ const Expertise = () => {
       </section>
 
       {/* ===== SELECTED REFERENCES ===== */}
-      <section className="py-16" style={{ backgroundColor: "#1B3A5C" }}>
-        <div className="container">
+      <section className="py-16 relative overflow-hidden">
+        {/* Background: blurred photo with blue overlay, matching original */}
+        <div className="absolute inset-0">
+          <img
+            src="https://millabakhareva.com/_assets/media/389f6b16de8e671c23e6619ea52ba0a7.png"
+            alt=""
+            className="w-full h-full object-cover blur-sm scale-110"
+          />
+          <div className="absolute inset-0" style={{ backgroundColor: "rgba(20, 50, 100, 0.75)" }} />
+        </div>
+
+        <div className="container relative z-10">
           <h2 className="text-4xl font-bold mb-12 text-center text-white">Selected References</h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {[
               {
                 img: "https://millabakhareva.com/_assets/media/389f6b16de8e671c23e6619ea52ba0a7.png",
@@ -273,12 +283,17 @@ const Expertise = () => {
                 desc: "Live demo for the Wall street community: Credit score for any business and Web3-based B2B lending -powered by AI. An open score for 13M companies. When on-boarding a company, the tool does both a business and consumer KYC.",
               },
             ].map((ref) => (
-              <div key={ref.title} className="overflow-hidden flex flex-col"
+              <div key={ref.title} className="overflow-hidden flex flex-col rounded-sm"
                 style={{ backgroundColor: "#FFFFFF" }}>
-                <img src={ref.img} alt={ref.title} className="w-full aspect-[4/3] object-cover" />
-                <div className="p-5 flex-1">
-                  <h3 className="text-base font-bold mb-3" style={{ color: "#0088CC" }}>{ref.title}</h3>
-                  <p className="text-sm leading-relaxed" style={{ color: "#000000" }}>{ref.desc}</p>
+                <img src={ref.img} alt={ref.title} className="w-full aspect-[16/9] object-cover" />
+                <div className="p-6 flex-1 flex flex-col">
+                  <h3 className="text-lg font-bold mb-3" style={{ color: "#0066CC" }}>{ref.title}</h3>
+                  <p className="text-sm leading-relaxed flex-1" style={{ color: "#000000" }}>{ref.desc}</p>
+                  <div className="mt-6">
+                    <span className="inline-block px-5 py-2 text-sm font-bold text-white rounded-full cursor-pointer" style={{ backgroundColor: "#0066CC" }}>
+                      Read More
+                    </span>
+                  </div>
                 </div>
               </div>
             ))}
