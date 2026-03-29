@@ -167,9 +167,6 @@ const Expertise = () => {
                     ))}
                   </ul>
                 )}
-                <div className="mt-4">
-                  <span className="text-sm font-medium cursor-pointer" style={{ color: bluePrimary }}>Read More</span>
-                </div>
               </div>
             ))}
           </div>
