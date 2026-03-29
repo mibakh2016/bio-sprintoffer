@@ -335,7 +335,7 @@ const Expertise = () => {
             <div className="rounded-xl p-8 shadow-md hover:shadow-xl transition-all" style={{ backgroundColor: cardBg }}>
               <div className="mb-4" style={{ color: bluePrimary }}><Gamepad2 className="h-8 w-8" /></div>
               <h3 className="text-xl font-bold mb-3" style={{ color: blueDark }}>Perspective Multi-Player Games</h3>
-              <p className="text-sm leading-relaxed" style={{ color: "#34495E" }}>
+              <p className="text-sm leading-relaxed" style={{ color: "#000000" }}>
                 A multi-agent platform for building complex multi-player gaming systems where each player has their own rules and unique perspective of the system.
               </p>
             </div>
