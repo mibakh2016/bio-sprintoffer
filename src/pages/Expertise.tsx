@@ -118,7 +118,7 @@ const Expertise = () => {
               <h3 className="text-2xl font-bold mb-4" style={{ color: "#002F69" }}>
                 Tech Solution Architect, CTO, Board, Investor
               </h3>
-              <div className="space-y-4 text-base leading-relaxed" style={{ color: "#121219" }}>
+              <div className="space-y-4 text-base leading-relaxed" style={{ color: "#000000" }}>
                 <p>
                   I'm an experienced architect with 30 years of leading projects trained in computer science, including distributed system design and (new tech) commercialization.
                 </p>
