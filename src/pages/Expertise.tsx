@@ -281,20 +281,17 @@ const Expertise = () => {
               {
                 img: "https://millabakhareva.com/_assets/media/5f49ca64b637da83b2d60309f632e396.png",
                 title: "Fintech Finovate Summit 2018 • New York",
-                desc: "Live demo for the Wall street community: Credit score for any business and Web3-based B2B lending -powered by AI. An open score for 13M companies. When on-boarding a company, the tool does both a business and consumer KYC.",
+                desc: "Live demo for the Wall street community:  Credit score for any business and Web3-based B2B lending -powered by AI. An open score for 13M companies. When on-boarding a company, the tool does both a business and consumer KYC.",
               },
             ].map((ref) => (
-              <div key={ref.title} className="overflow-hidden flex flex-col rounded-sm"
+              <div key={ref.title} className="flex flex-col"
                 style={{ backgroundColor: "#FFFFFF" }}>
-                <img src={ref.img} alt={ref.title} className="w-full aspect-[16/9] object-cover" />
-                <div className="p-6 flex-1 flex flex-col">
-                  <h3 className="text-lg font-bold mb-3" style={{ color: "#0066CC" }}>{ref.title}</h3>
-                  <p className="text-sm leading-relaxed flex-1" style={{ color: "#000000" }}>{ref.desc}</p>
-                  <div className="mt-6">
-                    <span className="inline-block px-5 py-2 text-sm font-bold text-white rounded-full cursor-pointer" style={{ backgroundColor: "#0066CC" }}>
-                      Read More
-                    </span>
-                  </div>
+                <div className="w-full bg-white" style={{ padding: "12px 12px 0 12px" }}>
+                  <img src={ref.img} alt={ref.title} className="w-full h-48 object-contain" />
+                </div>
+                <div className="px-6 pt-5 pb-8 flex-1 flex flex-col">
+                  <h3 className="text-lg font-bold mb-4 leading-tight" style={{ color: "#0077BB" }}>{ref.title}</h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "#333333" }}>{ref.desc}</p>
                 </div>
               </div>
             ))}
