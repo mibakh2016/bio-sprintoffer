@@ -266,7 +266,7 @@ const Expertise = () => {
                 style={{ backgroundColor: cardBg }}>
                 <div className="mb-4" style={{ color: bluePrimary }}>{ref.icon}</div>
                 <h3 className="text-lg font-bold mb-3" style={{ color: blueDark }}>{ref.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#34495E" }}>{ref.desc}</p>
+                <p className="text-sm leading-relaxed" style={{ color: "#000000" }}>{ref.desc}</p>
               </div>
             ))}
           </div>
