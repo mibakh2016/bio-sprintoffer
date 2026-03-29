@@ -9,10 +9,10 @@ const Navbar = () => {
         </a>
         
         <div className="hidden sm:flex items-center gap-8">
-          <a href="#services" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">Services</a>
-          <a href="#about" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">About</a>
+          <a href="/#services" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">Services</a>
+          <a href="/#about" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">About</a>
           <a href="/expertise" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">Expertise</a>
-          <a href="#contact" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">Contact</a>
+          <a href="/#contact" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors font-medium">Contact</a>
         </div>
 
         <Button variant="hero" size="sm" asChild>
