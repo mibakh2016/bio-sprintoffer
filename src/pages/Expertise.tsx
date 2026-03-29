@@ -287,7 +287,7 @@ const Expertise = () => {
               <div key={ref.title} className="flex flex-col"
                 style={{ backgroundColor: "#FFFFFF" }}>
                 <div className="w-full bg-white">
-                  <img src={ref.img} alt={ref.title} className="w-full aspect-[16/10] object-cover object-top" />
+                  <img src={ref.img} alt={ref.title} className="w-full aspect-[16/7] object-cover object-top" />
                 </div>
                 <div className="px-5 pt-4 pb-6 flex-1 flex flex-col">
                   <h3 className="text-base font-bold mb-3 leading-snug" style={{ color: "#0066CC" }}>{ref.title}</h3>
