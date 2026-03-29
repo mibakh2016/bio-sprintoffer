@@ -2,6 +2,7 @@ import { Linkedin, Mail, ArrowRight, Award, FileText, Globe, Presentation, Flask
 import heroPhoto from "@/assets/mb_photo_collage.png";
 import referencesBg from "@/assets/references-bg.png";
 import { Button } from "@/components/ui/button";
+import TemplateProjectsSection from "@/components/TemplateProjectsSection";
 
 const goldBg = "#F5D669";
 const bluePrimary = "#2874A6";
@@ -401,6 +402,7 @@ const Expertise = () => {
           </div>
         </div>
       </section>
+      <TemplateProjectsSection />
     </div>
   );
 };
