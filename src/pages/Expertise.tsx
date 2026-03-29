@@ -252,9 +252,10 @@ const Expertise = () => {
           <img
             src="https://millabakhareva.com/_assets/media/389f6b16de8e671c23e6619ea52ba0a7.png"
             alt=""
-            className="w-full h-full object-cover blur-sm scale-110"
+            className="w-full h-full object-cover scale-110"
+            style={{ filter: "blur(4px)" }}
           />
-          <div className="absolute inset-0" style={{ backgroundColor: "rgba(20, 50, 100, 0.75)" }} />
+          <div className="absolute inset-0" style={{ backgroundColor: "rgba(25, 55, 145, 0.78)" }} />
         </div>
 
         <div className="container relative z-10">
