@@ -105,7 +105,7 @@ const Expertise = () => {
       {/* ===== ABOUT ===== */}
       <section className="py-16" style={{ backgroundColor: "#EEEEF0" }}>
         <div className="container">
-          <h2 className="text-4xl font-bold mb-12 text-center" style={{ color: "#002F69" }}>&lt;About&gt;</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center" style={{ color: "#002F69" }}>About</h2>
           <div className="grid lg:grid-cols-2 gap-10 items-center max-w-5xl mx-auto">
             <div>
               <img
