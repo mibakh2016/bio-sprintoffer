@@ -278,7 +278,7 @@ const Expertise = () => {
         <div className="container">
           <div className="rounded-2xl p-10 shadow-lg max-w-4xl mx-auto" style={{ backgroundColor: cardBg }}>
             <h2 className="text-3xl font-bold mb-6" style={{ color: blueDark }}>More About Me</h2>
-            <div className="space-y-4 text-base leading-relaxed" style={{ color: "#2C3E50" }}>
+            <div className="space-y-4 text-base leading-relaxed" style={{ color: "#000000" }}>
               <p>
                 Currently a Deep Learning Researcher and AI architecture consultant. Previously CTO and board director at Datrixo, focused on developing AI capabilities for commercial organizations — managing engineering teams and serving as technical lead for multiple data analysis projects.
               </p>
