@@ -39,7 +39,7 @@ const Expertise = () => {
             </div>
             <div className="relative">
               <img
-                src="https://millabakhareva.com/_assets/media/c8e40f744b54d4301557a21e2ef27952.png"
+                src={heroPhoto}
                 alt="Milla Bakhareva"
                 className="rounded-xl shadow-2xl w-full max-w-md mx-auto object-cover"
               />
