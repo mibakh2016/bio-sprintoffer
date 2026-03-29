@@ -264,12 +264,12 @@ const Expertise = () => {
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
               {
-                img: "/images/references/www2013.png",
+                img: "/images/references/blockchain.png",
                 title: "WWW2013 Annual Conference",
                 desc: "The first time we announced our AI (IP) method for life-sciences was at the WWW conference, the yearly main international academic conference on future direction of the WWW since invention of the Web.",
               },
               {
-                img: "/images/references/blockchain.png",
+                img: "/images/references/www2013.png",
                 title: "Blockchain Nation (Miami 2018)",
                 desc: "Introducing the first fully-functional blockchain-based b2b payment processing and lending network to 3,000 attendee of one of the central decentralized system events in USA.",
               },
